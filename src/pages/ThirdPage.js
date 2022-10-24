@@ -26,15 +26,15 @@ export default function ThirdPage() {
         }}
       >
         <CardContent>
-        <CardMedia className="cardImage"
-           component="img"
-           image={userLogo}
-           alt="Paella dish"
-        />
+            <img
+            src={userLogo}
+            alt="user"
+            className="cardImage"
+          />
           <Typography variant="h5" component="h3">
             For myself
           </Typography><br />
-          <Typography
+          <Typography 
             style={{
               marginBottom: 8,
             }}
@@ -46,14 +46,13 @@ export default function ThirdPage() {
           </Typography>
         </CardContent>
         </Card>
-        <Card className="flex-child" sx={{ minWidth: 275}}>
+        <Card className="flex-child" sx={{ minWidth: 27}}>
         <CardContent>
-        <CardMedia className="cardImage"
-           component="img"
-           image={groupLogo}
-           alt="Paella dish"
-           width='30%'
-        />
+        <img
+            src={groupLogo}
+            alt="group"
+            className="cardImage"
+          />
           <Typography variant="h5" component="h3">
            With my team
           </Typography><br />
