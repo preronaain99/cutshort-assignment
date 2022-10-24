@@ -1,11 +1,15 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom";
 import "../styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SecondPage from './SecondPage';
+import Button from '@material-ui/core/Button';
 import navbarLogo from '../assets/navbarLogo.png';
-import { useForm } from "react-hook-form";
+import { useHistory } from "react-router-dom";
 export default function FirstPage() {
+  const history = useHistory();
+  
+    const secondPage = () => {
+        history.push("/second")
+    }
     return (
     <div>
         <div>
@@ -23,7 +27,7 @@ export default function FirstPage() {
               type="text"
               className="form"
               placeholder="Steve Jobs"
-              required
+              required={true}
             />
           </div>
           <div className="form-group mt-3">
@@ -32,14 +36,14 @@ export default function FirstPage() {
               type="text"
               className="form"
               placeholder="Steve"
-              required
+              required={true}
             />
           </div>
-          <div className="form-group mt-3">
-            <button style={{outline: 'none'}} type="submit" className="bottom">
+        
+            <button className='bottom' onClick={secondPage} >
              Create Workspace
             </button>
-          </div>
+        
         </div>
       </form>
     </div>

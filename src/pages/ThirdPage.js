@@ -1,46 +1,80 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import CardMedia from '@mui/material/CardMedia';
+import userLogo from '../assets/userLogo.png';
+import groupLogo from '../assets/groupLogo.png'
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import CardActions from "@material-ui/core/CardActions";
 import "../styles.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import navbarLogo from '../assets/navbarLogo.png';
 export default function ThirdPage() {
+  const history = useHistory();
+  const fourthPage = () => {
+      history.push("/fourth");
+  }
   return (
     <div>
         <img className='center' src={navbarLogo } /><br></br>
         <h3 className='headline'>How are you planning to use Eden?</h3>
         <h3 className='text'>We'll streamline your setup experience accordingly.</h3>
-        <div className="card">
-      <Card
+        <br />
+        <div className="flex-container">
+      <Card className="flex-child" sx={{ minWidth: 275}}
         style={{
           backgroundColor: "white",
         }}
       >
         <CardContent>
-          <Typography variant="h5" component="h2">
+        <CardMedia className="cardImage"
+           component="img"
+           image={userLogo}
+           alt="Paella dish"
+        />
+          <Typography variant="h5" component="h3">
             For myself
-          </Typography>
+          </Typography><br />
           <Typography
             style={{
-              marginBottom: 12,
+              marginBottom: 8,
             }}
             color="textSecondary"
           >
-            Write Better.Think<br></br>
+           Write Better.Think<br />
             more clearly.Stay<br></br>
             organized.
           </Typography>
         </CardContent>
+        </Card>
+        <Card className="flex-child" sx={{ minWidth: 275}}>
+        <CardContent>
+        <CardMedia className="cardImage"
+           component="img"
+           image={groupLogo}
+           alt="Paella dish"
+           width='30%'
+        />
+          <Typography variant="h5" component="h3">
+           With my team
+          </Typography><br />
+          <Typography
+            style={{
+              marginBottom: 8,
+            }}
+            color="textSecondary"
+          >
+           Wikis, docs, tasks &<br />
+           projects, all in one<br></br>
+           place.
+          </Typography>
+        </CardContent>
       </Card>
       </div>
-      <div className="form-group mt-3">
-            <button style={{outline: 'none'}} type="submit" className="bottom">
+      <div className="center">
+            <button  className="bottom" onClick={fourthPage}>
              Create Workspace
             </button>
-      </div>
+            </div>
     </div>
   );
 }

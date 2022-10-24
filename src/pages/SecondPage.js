@@ -1,14 +1,13 @@
 import React from 'react';
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import "../styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import navbarLogo from '../assets/navbarLogo.png';
-import { useForm } from "react-hook-form";
 export default function SecondPage() {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = (data) => {
-        console.log(data);
-      }
+    const history = useHistory();
+    const thirdPage = () => {
+        history.push("/third");
+    }
     return (
     <div>
         <div>
@@ -26,9 +25,8 @@ export default function SecondPage() {
               type="text"
               className="form"
               placeholder="Eden"
-              required
+              required="true"
             />
-            {errors.fullName && <p>Enter your full Name</p>}
           </div>
           <div className="form-group mt-3">
             <label className='form'>Workspace URL</label><label color='grey'>(Optional)</label>
@@ -36,12 +34,10 @@ export default function SecondPage() {
               type="text"
               className="form"
               placeholder="Steve"
-              required
             />
-            {errors.displayName && <p>Enter your display Name</p>}
           </div>
           <div className="form-group mt-3">
-            <button style={{outline: 'none'}} type="submit" className="bottom" onSubmit={handleSubmit(onSubmit)}>
+            <button style={{outline: 'none'}} type="submit" className="bottom" onClick={thirdPage}>
              Create Workspace
             </button>
             {/* <Routes>

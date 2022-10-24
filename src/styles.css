@@ -45,6 +45,7 @@
   .center{
     text-align: center;
     display: block;
+    padding-top: 3%;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -107,20 +108,41 @@
   }
 
   .bottom {
+    display: flex;
     outline: none;
+    padding-top: 3%;
+    border-color: transparent;
+    border-radius: 0.2rem ;
     background-color: #664de5;
     color: white;
-    border: 0 0 0 0 ;
     text-align: center;
     justify-content: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    width: 25vw;
   }
-  .card {
+  .flex-container {
+    background-color: white;
     padding-top: 3%;
-    padding-left: 40%;
     display: flex;
-    width: 40vw;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-  }
+    border-radius: 2rem ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vw;
+    height: 40vh;
+    justify-content: left;
+    align-items: left;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid #664de5;
+    border-radius: 0.2rem ;
+}  
+
+.flex-child:first-child {
+    margin-right: 8rem;
+} 
+
+.cardImage {
+  width: 30%
+}
