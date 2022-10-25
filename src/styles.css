@@ -1,129 +1,134 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  .container {
+  box-sizing: border-box;
+}
 
-    text-align: center;
-    width: 80vw;
-    padding-right: 0;
-  }
-  .site-title {
-    font-size: 2rem;
-  }
-  .headline {
-    text-align: center;
-    font-size: 3vw;
-    margin-top: 0;
-    width: 100;
-    font-family: 'Inter';
-  }
-  .text {
-    text-align: center;
-    color: #778299;
-    font-family: 'Inter';
-    font-size: 2vw;
-  }
-  .center{
-    text-align: center;
-    display: block;
-    padding-top: 3%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 20vw;
-    height: 20vh;
-  }
-  .form {
-    font-family: 'Inter';
-    font-size: 2vw;
-  }
-  .photo {
-    height: 20%;
-    width: 20%;
-  }  
+body {
+  margin: 0;
+}
+
+.container {
+
+  text-align: center;
+  width: 80vw;
+  padding-right: 0;
+}
+
+.site-title {
+  font-size: 2rem;
+}
+
+.headline {
+  text-align: center;
+  font-size: 3vw;
+  margin-top: 0;
+  width: 100;
+}
+
+.text {
+  text-align: center;
+  color: #778299;
+  font-family: 'Inter';
+  font-size: 2vw;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  padding-top: 3%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 20vw;
+  height: 20vh;
+}
+
+.form {
+  font-size: 2vw;
+}
+
+.photo {
+  height: 20%;
+  width: 20%;
+}
+
 .App {
-    background-color: white;
-  }
-  
-  .Auth-form-container {
-    padding-top: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-  }
-  
-  .Auth-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35vw;
-    height: 50vh;
-  }
-  
-  .Auth-form-content {
-    padding-left: 12%;
-    padding-right: 12%;
-  }
-  
-  .Auth-form-title {
-    text-align: center;
-    margin-bottom: 1em;
-    font-size: 24px;
-    color: rgb(34, 34, 34);
-    font-weight: 800;
-  }
-  
-  .label {
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(34, 34, 34);
-  }
+  background-color: white;
+}
 
-  .bottom {
-    display: flex;
-    outline: none;
-    padding-top: 3%;
-    border-color: transparent;
-    border-radius: 0.2rem ;
-    background-color: #664de5;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    font-size: 1.5vw;
-    font: 'Inter';
-    width: 25vw;
-  }
-  .flex-container {
-    background-color: white;
-    display: flex;
-    border-radius: 2rem ;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40vw;
-    height: 40vh;
-    justify-content: left;
-    align-items: left;
+.Auth-form-container {
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Auth-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 50vh;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+.bottom {
+  display: flex;
+  outline: none;
+  padding-top: 3%;
+  border-color: transparent;
+  border-radius: 0.2rem;
+  background-color: #664de5;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  width: 23.5vw;
+}
+
+.flex-container {
+  background-color: white;
+  display: flex;
+  border-radius: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  height: 40vh;
+  justify-content: left;
+  align-items: left;
 }
 
 .flex-child {
-    flex: 1;
-    border-radius: 0.2rem ;
-    justify-content: left;
-    align-items: flex-start;
-}  
+  flex: 1;
+  border-radius: 0.2rem;
+  justify-content: left;
+  align-items: flex-start;
+}
 
 .flex-child:first-child {
-    margin-right: 30px;
-    align-items: left;
-    justify-content: left;
-    border: 2px solid #664de5;
-} 
+  margin-right: 30px;
+  align-items: left;
+  justify-content: left;
+  border: 2px solid #664de5;
+}
 
 .cardImage {
   width: 3vw;
@@ -138,10 +143,11 @@
   background: #664de5;
   color: #ffffff;
   text-align: center;
-  font:Arial, sans-serif;
-  font-size:1rem;
+  font: Arial, sans-serif;
+  font-size: 1rem;
   place-items: center;
 }
+
 .circle-child {
   border-radius: 50%;
   border: 0.2px solid grey;
@@ -151,11 +157,12 @@
   background: #ffffff;
   color: #000000;
   text-align: center;
-  font:Arial, sans-serif;
+  font: Arial, sans-serif;
   font-size: 1rem;
   place-items: center;
 
 }
+
 .line {
   margin-top: 1rem;
   border-radius: 0%;
@@ -163,6 +170,7 @@
   height: 0.1rem;
   background: linear-gradient(to right, #664de5 50%, #e4e7ea 50%);
 }
+
 .root {
   /* margin-left: 2rem;
   width: 60vw; */
