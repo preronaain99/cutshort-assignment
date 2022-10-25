@@ -35,7 +35,7 @@ export default function FirstPage() {
                 className="form"
                 placeholder="Steve Jobs"
                 required={true}
-              />
+              /><br />
             </div>
             <div className="form-group mt-3">
               <label className='form'>Display Name</label>
