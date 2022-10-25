@@ -11,8 +11,16 @@ export default function SecondPage() {
     return (
     <div>
         <div>
-        <img className='center' src={navbarLogo } />
-
+        <img className='center' src={navbarLogo } /><br /><br />
+        <div className='root'>
+        <div className='circle'>1</div>
+        <div className='line' style={{background: '#664de5'}}></div>
+        <div className='circle'>2</div>
+        <div className='line'></div>
+        <div className='circle-child'>3</div>
+        <div className='line' style={{background : '#b5c2ce'}}></div>
+        <div className='circle-child'>4</div>
+        </div><br /><br /><br />
         <h3 className='headline'>Let's set up a home for all your work</h3>
         <h3 className='text'>You can always create another workspace later.</h3>
         </div>

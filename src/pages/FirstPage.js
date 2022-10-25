@@ -1,7 +1,6 @@
 import React from 'react';
 import "../styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from '@material-ui/core/Button';
 import navbarLogo from '../assets/navbarLogo.png';
 import { useHistory } from "react-router-dom";
 export default function FirstPage() {
@@ -10,11 +9,20 @@ export default function FirstPage() {
     const secondPage = () => {
         history.push("/second")
     }
+    
     return (
     <div>
-        <div>
-        <img className='center' src={navbarLogo } />
-
+        <div >
+        <img className='center' src={navbarLogo } /><br /><br />
+        <div className='root'>
+        <div className='circle'>1</div>
+        <div className='line' ></div>
+        <div className='circle-child'>2</div>
+        <div className='line' style={{background : '#b5c2ce'}}></div>
+        <div className='circle-child'>3</div>
+        <div className='line' style={{background : '#b5c2ce'}}></div>
+        <div className='circle-child'>4</div>
+        </div><br /><br /><br />
         <h3 className='headline'>Welcome! First things first...</h3>
         <h3 className='text'>You can always change them later</h3>
         </div>
@@ -27,7 +35,7 @@ export default function FirstPage() {
               type="text"
               className="form"
               placeholder="Steve Jobs"
-              required={true}
+              required
             />
           </div>
           <div className="form-group mt-3">
@@ -40,7 +48,7 @@ export default function FirstPage() {
             />
           </div>
         
-            <button className='bottom' onClick={secondPage} >
+            <button className='bottom' type='button' onClick={secondPage} >
              Create Workspace
             </button>
         

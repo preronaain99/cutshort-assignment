@@ -2,7 +2,6 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import CardMedia from '@mui/material/CardMedia';
 import userLogo from '../assets/userLogo.png';
 import groupLogo from '../assets/groupLogo.png'
 import Typography from "@material-ui/core/Typography";
@@ -16,6 +15,15 @@ export default function ThirdPage() {
   return (
     <div>
         <img className='center' src={navbarLogo } /><br></br>
+        <div className='root'>
+        <div className='circle'>1</div>
+        <div className='line' style={{background: '#664de5'}}></div>
+        <div className='circle'>2</div>
+        <div className='line' style={{background: '#664de5'}}></div>
+        <div className='circle'>3</div>
+        <div className='line'></div>
+        <div className='circle-child'>4</div>
+        </div><br /><br /><br />
         <h3 className='headline'>How are you planning to use Eden?</h3>
         <h3 className='text'>We'll streamline your setup experience accordingly.</h3>
         <br />

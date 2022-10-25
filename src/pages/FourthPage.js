@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Checkmark } from 'react-checkmark';
 import { useHistory } from 'react-router-dom';
 import navbarLogo from '../assets/navbarLogo.png';
@@ -10,7 +10,16 @@ export default function FourthPage() {
   }
         return (
             <div>
-                 <img className='center' src={navbarLogo } />
+                 <img className='center' src={navbarLogo } /><br />
+                 <div className='root'>
+                 <div className='circle'>1</div>
+                 <div className='line' style={{background: '#664de5'}}></div>
+                 <div className='circle'>2</div>
+                 <div className='line' style={{background: '#664de5'}}></div>
+                 <div className='circle'>3</div>
+                 <div className='line' style={{background: '#664de5'}}></div>
+                 <div className='circle'>4</div>
+            </div><br /><br /><br />
                 <Checkmark color='#664de5' size='large'/><br></br><br></br>
                 <div>
                 <h3 className='headline'>Congratulations, Eren!</h3>

@@ -12,21 +12,6 @@
     width: 80vw;
     padding-right: 0;
   }
-  
-  .nav {
-   
-    color: black;
-    display: flex;
-    font-weight: 500;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 2rem;
-    padding-left: 2rem;
-    padding-right: 4rem;
-    background-color: #c6c2c1;
-
-  }
-  
   .site-title {
     font-size: 2rem;
   }
@@ -34,7 +19,8 @@
     text-align: center;
     font-size: 3vw;
     margin-top: 0;
-    width: 100,
+    width: 100;
+    font-family: 'Inter';
   }
   .text {
     text-align: center;
@@ -55,14 +41,6 @@
   .form {
     font-family: 'Inter';
     font-size: 2vw;
-  }
-  .nav a {
-    color: inherit;
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-   
   }
   .photo {
     height: 20%;
@@ -118,6 +96,7 @@
     text-align: center;
     justify-content: center;
     font-size: 1.5vw;
+    font: 'Inter';
     width: 25vw;
   }
   .flex-container {
@@ -149,4 +128,44 @@
 .cardImage {
   width: 3vw;
   height: 8vh
+}
+
+.circle {
+  border-radius: 50%;
+  width: 3.5vw;
+  height: 7.5vh;
+  padding: 10px;
+  background: #664de5;
+  color: #ffffff;
+  text-align: center;
+  font:Arial, sans-serif;
+  font-size:1rem;
+  place-items: center;
+}
+.circle-child {
+  border-radius: 50%;
+  border: 0.2px solid grey;
+  width: 3.5vw;
+  height: 7.5vh;
+  padding: 10px;
+  background: #ffffff;
+  color: #000000;
+  text-align: center;
+  font:Arial, sans-serif;
+  font-size: 1rem;
+  place-items: center;
+
+}
+.line {
+  margin-top: 1rem;
+  border-radius: 0%;
+  width: 5vw;
+  height: 0.1rem;
+  background: linear-gradient(to right, #664de5 50%, #e4e7ea 50%);
+}
+.root {
+  /* margin-left: 2rem;
+  width: 60vw; */
+  display: flex;
+  justify-content: center;
 }
